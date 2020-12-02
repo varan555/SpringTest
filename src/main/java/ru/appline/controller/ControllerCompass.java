@@ -23,7 +23,7 @@ public class ControllerCompass {
 
     @GetMapping(value = "/getCompass", produces = "application/json")
     public String get(@RequestBody Map<String, Integer> id) {
-        return compassModel.get(id.get("Degree"))+":"+id.get("Degree");
+        return "Side: " + compassModel.get(id.get("Degree"));
     }
 
 }

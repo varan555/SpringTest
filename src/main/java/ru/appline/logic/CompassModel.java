@@ -28,7 +28,7 @@ public class CompassModel implements Serializable{
 
         for (Map.Entry<String, String> entry : compass.entrySet()
                 ) {
-            if (entry.getKey().equals("North")) {
+            if (entry.getKey().equals("North")||entry.getKey().equals("north")||entry.getKey().equals("Север")||entry.getKey().equals("север")) {
                 int northMin = Integer.parseInt(entry.getValue().split("-")[0]);
                 int northMax = Integer.parseInt(entry.getValue().split("-")[1]);
                 Map<Integer, Integer> north = new HashMap<Integer, Integer>();
