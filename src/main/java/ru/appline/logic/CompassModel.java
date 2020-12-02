@@ -34,7 +34,7 @@ public class CompassModel implements Serializable{
                 Map<Integer, Integer> north = new HashMap<Integer, Integer>();
                 north.put(northMin, 360);
                 north.put(0, northMax);
-                model.add(new Compass("North", north));
+                model.add(new Compass(entry.getKey(), north));
             } else {
                 int min = Integer.parseInt(entry.getValue().split("-")[0]);
                 int max = Integer.parseInt(entry.getValue().split("-")[1]);
